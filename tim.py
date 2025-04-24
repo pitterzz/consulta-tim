@@ -28,8 +28,8 @@ print("Carregando tela de login...")
 
 try:
     WebDriverWait(driver, 15).until(EC.presence_of_element_located((By.NAME, "username")))
-    driver.find_element(By.NAME, "username").send_keys("3662513")
-    driver.find_element(By.NAME, "password").send_keys("Vitin@01")
+    driver.find_element(By.NAME, "username").send_keys("COLOQUE O LOGIN")
+    driver.find_element(By.NAME, "password").send_keys("COLOQUE A SENHA")
     driver.find_element(By.XPATH, '//button[contains(text(), "Fazer login")]').click()
     print("Login realizado.")
 except Exception as e:
